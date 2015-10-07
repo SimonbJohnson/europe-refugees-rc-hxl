@@ -22,8 +22,6 @@ function constructHXLURL(linkList){
 
 var url = constructHXLURL(sheets);
 
-console.log(url);
-
 var html = 'Download complete data set: <a href="'+url+'" target="_blank">Download CSV</a>';
 
 $('#completedownload').html(html);
@@ -39,10 +37,19 @@ var html = '<a href="http://simonbjohnson.github.io/data-quality-dashboard/index
 $('#dataquality').html(html);
 
 $('#updatedownloadbutton').click(function(){
-    $('#updatedownload').html('Updating');
+    $('#updatedownload').html('Updating CSV');
     $.ajax(url+'&force=1', {
             success: function(data) {
-                $('#updatedownload').html('Updated');
+                $('#updatedownload').html('Updating Dashboard');
+                var newURL = url.replace('/data.csv?','/data.json?');
+                $.ajax(newURL+'&force=1', {
+                    success: function(data) {
+                        $('#updatedownload').html('Update complete');
+                    },
+                    error: function(e,err) {
+                        $('#updatedownload').html('Bad Update');
+                    }
+                });   
             },
             error: function(e,err) {
                 $('#updatedownload').html('Bad Update');

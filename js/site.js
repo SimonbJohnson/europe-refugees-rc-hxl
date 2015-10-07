@@ -58,7 +58,7 @@ var html = 'Download district Overview: <a href="'+districtURL+'" target="_blank
 
 $('#district').html(html);*/
 
-var html = '<a href="http://simonbjohnson.github.io/data-quality-dashboard/index.html?url='+encodeURIComponent(url)+'" target="_blank">Data quality dashboard</a>';
+var html = '<a href="http://simonbjohnson.github.io/data-quality-dashboard/index.html?url='+encodeURIComponent('http://beta.proxy.hxlstandard.org/data/Te-hOo.csv')+'" target="_blank">Data quality dashboard</a>';
 
 $('#dataquality').html(html);
 

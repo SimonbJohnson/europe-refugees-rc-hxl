@@ -16,7 +16,7 @@ function constructHXLURL(linkList){
             url+='&append-dataset01-'+i+'='+l;
         }        
     });
-    url += '&filter02=replace-map&replace-map-url02=https://docs.google.com/spreadsheets/d/12TdWAO9BmavBkGEM-7hPV7IMjN_EOJY_2iGnW_ezjuk/pub?gid=493036357&single=true&output=csv7&filter03=merge&merge-url03=https%3A%2F%2Fdocs.google.com%2Fspreadsheets%2Fd%2F12TdWAO9BmavBkGEM-7hPV7IMjN_EOJY_2iGnW_ezjuk%2Fpub%3Foutput%3Dcsv&merge-tags03=country%2Bcode&merge-keys03=country';
+    url += '&filter02=replace-map&replace-map-url02=https://docs.google.com/spreadsheets/d/12TdWAO9BmavBkGEM-7hPV7IMjN_EOJY_2iGnW_ezjuk/pub?gid=493036357&single=true&output=csv7&filter03=merge&merge-url03=https%3A%2F%2Fdocs.google.com%2Fspreadsheets%2Fd%2F12TdWAO9BmavBkGEM-7hPV7IMjN_EOJY_2iGnW_ezjuk%2Fpub%3Foutput%3Dcsv&merge-tags03=country%2Bcode&merge-keys03=country-code';
     return url;
 }
 
@@ -32,7 +32,7 @@ var html = 'HXL Proxy Editor: <a href="'+hxlProxyURL+'" target="_blank">Editor</
 
 $('#hxlproxyeditor').html(html);
 
-var html = '<a href="http://simonbjohnson.github.io/data-quality-dashboard/index.html?url='+encodeURIComponent('http://beta.proxy.hxlstandard.org/data/Te-hOo.csv')+'" target="_blank">Data quality dashboard</a>';
+var html = '<a href="http://simonbjohnson.github.io/data-quality-dashboard/index.html?url='+encodeURIComponent('http://beta.proxy.hxlstandard.org/data/uwAZzW.csv')+'" target="_blank">Data quality dashboard</a>';
 
 $('#dataquality').html(html);
 

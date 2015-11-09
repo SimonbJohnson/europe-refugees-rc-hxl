@@ -1,7 +1,7 @@
 //function to construct hxlprxy URL
 
 function constructHXLURL(linkList){
-    var url = 'http://beta.proxy.hxlstandard.org/data.csv?filter_count=7&url=';
+    var url = 'https://proxy.hxlstandard.org/data.csv?filter_count=7&url=';
     linkList.forEach(function(l,i){
         if(i==0){
             url+=l+'&format=html';
@@ -57,7 +57,7 @@ $('#updatedownloadbutton').click(function(){
     });    
 });
 
-var urloverview = 'http://proxy.hxlstandard.org/data.json?filter01=replace-map&replace-map-url01=https%3A//docs.google.com/spreadsheets/d/12TdWAO9BmavBkGEM-7hPV7IMjN_EOJY_2iGnW_ezjuk/pubhtml%3Fgid%3D493036357%26single%3Dtrue&filter02=merge&merge-url02=https%3A//docs.google.com/spreadsheets/d/12TdWAO9BmavBkGEM-7hPV7IMjN_EOJY_2iGnW_ezjuk/pub%3Fgid%3D0%26single%3Dtrue%26output%3Dcsv&merge-tags02=%23country%2Bcode&merge-keys02=%23country-code&filter03=&filter04=&filter05=&filter06=&filter07=&url=https%3A//docs.google.com/spreadsheets/d/1m3XUjtbLWKEUpUKu4ic16ruDeNj7yuZG2_1Y8U-tvs0/pub%3Fgid%3D0%26single%3Dtrue%26output%3Dcsv';
+var urloverview = 'https://proxy.hxlstandard.org/data.json?filter01=replace-map&replace-map-url01=https%3A//docs.google.com/spreadsheets/d/12TdWAO9BmavBkGEM-7hPV7IMjN_EOJY_2iGnW_ezjuk/pubhtml%3Fgid%3D493036357%26single%3Dtrue&filter02=merge&merge-url02=https%3A//docs.google.com/spreadsheets/d/12TdWAO9BmavBkGEM-7hPV7IMjN_EOJY_2iGnW_ezjuk/pub%3Fgid%3D0%26single%3Dtrue%26output%3Dcsv&merge-tags02=%23country%2Bcode&merge-keys02=%23country-code&filter03=&filter04=&filter05=&filter06=&filter07=&url=https%3A//docs.google.com/spreadsheets/d/1m3XUjtbLWKEUpUKu4ic16ruDeNj7yuZG2_1Y8U-tvs0/pub%3Fgid%3D0%26single%3Dtrue%26output%3Dcsv';
 
 var html = 'Download complete data set: <a href="'+urloverview+'" target="_blank">Download CSV</a>';
 
@@ -69,7 +69,7 @@ var html = 'HXL Proxy Editor: <a href="'+hxlProxyURL+'" target="_blank">Editor</
 
 $('#hxlproxyeditoroverview').html(html);
 
-var html = '<a href="http://simonbjohnson.github.io/data-quality-dashboard/index.html?url='+encodeURIComponent('http://beta.proxy.hxlstandard.org/data/uwAZzW.csv')+'" target="_blank">Data quality dashboard</a>';
+var html = '<a href="http://simonbjohnson.github.io/data-quality-dashboard/index.html?url='+encodeURIComponent('https://proxy.hxlstandard.org/data/uwAZzW.csv')+'" target="_blank">Data quality dashboard</a>';
 
 $('#dataqualityoverview').html(html);
 
